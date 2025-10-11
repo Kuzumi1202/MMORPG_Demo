@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Project\\Unity\\Demo_MMO\\Src\\Server\\GameServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|e:\\project\\unity\\demo_mmo\\src\\server\\gameserver\\gameserver\\utils\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\utils\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Time.cs",
+              "DocumentMoniker": "E:\\Project\\Unity\\Demo_MMO\\Src\\Server\\GameServer\\GameServer\\Utils\\Time.cs",
+              "RelativeDocumentMoniker": "GameServer\\Utils\\Time.cs",
+              "ToolTip": "E:\\Project\\Unity\\Demo_MMO\\Src\\Server\\GameServer\\GameServer\\Utils\\Time.cs",
+              "RelativeToolTip": "GameServer\\Utils\\Time.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAQwBoAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T19:09:09.226Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
