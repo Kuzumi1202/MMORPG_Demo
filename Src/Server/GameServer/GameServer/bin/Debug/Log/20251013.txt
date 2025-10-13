@@ -1,0 +1,31 @@
+
+2025-10-13 16:17:06,907 [1] [INFO ] [GameServer] £ºGame Server Init
+2025-10-13 16:17:07,206 [1] [WARN ] [GameServer] £ºStarting Listener...
+2025-10-13 16:17:07,275 [10] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:17:07,275 [15] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:17:07,275 [12] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:17:07,275 [9] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:17:07,275 [7] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:17:07,276 [11] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:17:07,304 [16] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:17:07,304 [17] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:17:07,318 [1] [WARN ] [GameServer] £ºNetService Started
+2025-10-13 16:55:46,830 [1] [INFO ] [GameServer] £ºGame Server Init
+2025-10-13 16:55:47,335 [1] [WARN ] [GameServer] £ºStarting Listener...
+2025-10-13 16:55:47,425 [9] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:55:47,426 [10] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:55:47,426 [8] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:55:47,426 [5] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:55:47,427 [11] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:55:47,427 [13] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:55:47,428 [6] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:55:47,429 [12] [WARN ] [GameServer] £ºMessageDistribute thread start
+2025-10-13 16:55:47,503 [1] [WARN ] [GameServer] £ºNetService Started
+2025-10-13 16:56:06,460 [3] [WARN ] [GameServer] £ºClient[127.0.0.1:56352]] Connected
+2025-10-13 16:56:06,505 [3] [WARN ] [GameServer] £ºClient[] DataReceived Len:21
+2025-10-13 16:56:06,582 [5] [INFO ] [GameServer] £ºUserRegisterRequest: User:user01  Pass:123
+2025-10-13 16:56:19,674 [17] [WARN ] [GameServer] £ºClient[] DataReceived Len:22
+2025-10-13 16:56:19,676 [6] [INFO ] [GameServer] £ºUserLoginRequest: User:user01  Pass:1234
+2025-10-13 16:56:23,269 [17] [WARN ] [GameServer] £ºClient[] DataReceived Len:21
+2025-10-13 16:56:23,270 [5] [INFO ] [GameServer] £ºUserLoginRequest: User:user01  Pass:123
+2025-10-13 16:56:29,346 [17] [WARN ] [GameServer] £ºClient[] Disconnected
