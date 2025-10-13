@@ -22,11 +22,6 @@
       <End Role="Player" EntitySet="Players" />
       <End Role="Character" EntitySet="Characters" />
     </AssociationSet>
-    <EntitySet Name="CharacterItem" EntityType="ExtremeWorldModel.TCharacterItem" />
-    <AssociationSet Name="TCharacterTCharacterItem" Association="ExtremeWorldModel.TCharacterTCharacterItem">
-      <End Role="TCharacter" EntitySet="Characters" />
-      <End Role="TCharacterItem" EntitySet="CharacterItem" />
-    </AssociationSet>
   </EntityContainer>
   <EntityType Name="TPlayer">
     <Key>
@@ -52,31 +47,9 @@
     <Property Name="MapPosX" Type="Int32" Nullable="false" />
     <Property Name="MapPosY" Type="Int32" Nullable="false" />
     <Property Name="MapPosZ" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="Items" Relationship="ExtremeWorldModel.TCharacterTCharacterItem" FromRole="TCharacter" ToRole="TCharacterItem" />
   </EntityType>
   <Association Name="PlayerCharacter">
     <End Type="ExtremeWorldModel.TPlayer" Role="Player" Multiplicity="1" />
     <End Type="ExtremeWorldModel.TCharacter" Role="Character" Multiplicity="*" />
-  </Association>
-  <EntityType Name="TCharacterItem">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" Nullable="false" />
-    <NavigationProperty Name="Character" Relationship="ExtremeWorldModel.TCharacterTCharacterItem" FromRole="TCharacterItem" ToRole="TCharacter" />
-    <Property Name="CharacterID" Type="Int32" Nullable="false" />
-  </EntityType>
-  <Association Name="TCharacterTCharacterItem">
-    <End Type="ExtremeWorldModel.TCharacter" Role="TCharacter" Multiplicity="1" />
-    <End Type="ExtremeWorldModel.TCharacterItem" Role="TCharacterItem" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="TCharacter">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="TCharacterItem">
-        <PropertyRef Name="CharacterID" />
-      </Dependent>
-    </ReferentialConstraint>
   </Association>
 </Schema>

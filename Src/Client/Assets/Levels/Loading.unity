@@ -756,7 +756,7 @@ RectTransform:
   m_LocalScale: {x: 1.6237977, y: 1.6237977, z: 1.6237977}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1648,8 +1648,8 @@ RectTransform:
   m_Children:
   - {fileID: 435601199}
   - {fileID: 1812886142}
-  - {fileID: 942185006}
   - {fileID: 1704983016}
+  - {fileID: 942185006}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1831,7 +1831,7 @@ RectTransform:
   - {fileID: 1790627437}
   - {fileID: 2008834066}
   m_Father: {fileID: 809913068}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2133,7 +2133,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3356,7 +3356,7 @@ RectTransform:
   - {fileID: 1255766728}
   - {fileID: 749336415}
   m_Father: {fileID: 809913068}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3412,6 +3412,7 @@ MonoBehaviour:
   password: {fileID: 718393006}
   passwordConfirm: {fileID: 611274355}
   buttonRegister: {fileID: 1255766729}
+  uiLogin: {fileID: 1704983015}
 --- !u!1 &1790627436
 GameObject:
   m_ObjectHideFlags: 0
