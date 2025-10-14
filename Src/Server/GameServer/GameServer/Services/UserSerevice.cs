@@ -7,33 +7,33 @@ using Common;
 using Network;
 using SkillBridge.Message;
 using GameServer.Entities;
+using GameServer.Managers;
 
 namespace GameServer.Services
 {
-    class UserService : Singleton<UserService>
+    internal class UserService : Singleton<UserService>
     {
-
         public UserService()
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserLoginRequest>(this.OnLogin);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserRegisterRequest>(this.OnRegister);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserCreateCharacterRequest>(this.OnCreateCharacter);
-        }
 
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserGameEnterRequest>(this.OnGameEnter);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserGameLeaveRequest>(this.OnGameLeave);
+        }
 
         public void Init()
         {
-
         }
 
-        void OnLogin(NetConnection<NetSession> sender, UserLoginRequest request)
+        private void OnLogin(NetConnection<NetSession> sender, UserLoginRequest request)
         {
             Log.InfoFormat("UserLoginRequest: User:{0}  Pass:{1}", request.User, request.Passward);
 
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
             message.Response.userLogin = new UserLoginResponse();
-
 
             TUser user = DBService.Instance.Entities.Users.Where(u => u.Username == request.User).FirstOrDefault();
             if (user == null)
@@ -64,20 +64,18 @@ namespace GameServer.Services
                     info.Class = (CharacterClass)c.Class;
                     message.Response.userLogin.Userinfo.Player.Characters.Add(info);
                 }
-
             }
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
         }
 
-        void OnRegister(NetConnection<NetSession> sender, UserRegisterRequest request)
+        private void OnRegister(NetConnection<NetSession> sender, UserRegisterRequest request)
         {
             Log.InfoFormat("UserRegisterRequest: User:{0}  Pass:{1}", request.User, request.Passward);
 
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
             message.Response.userRegister = new UserRegisterResponse();
-
 
             TUser user = DBService.Instance.Entities.Users.Where(u => u.Username == request.User).FirstOrDefault();
             if (user != null)
@@ -113,7 +111,6 @@ namespace GameServer.Services
                 MapPosZ = 820,
             };
 
-
             DBService.Instance.Entities.Characters.Add(character);
             sender.Session.User.Player.Characters.Add(character);
             DBService.Instance.Entities.SaveChanges();
@@ -126,6 +123,28 @@ namespace GameServer.Services
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
+        }
+
+        private void OnGameEnter(NetConnection<NetSession> sender, UserGameEnterRequest request)
+        {
+            TCharacter dbchar = sender.Session.User.Player.Characters.ElementAt(request.characterIdx);
+            Log.InfoFormat("UserGameEnterRequest: characterID:{0}:{1} Map:{2}", dbchar.ID, dbchar.Name, dbchar.MapID);
+            Character character = CharacterManager.Instance.AddCharacter(dbchar);
+
+            NetMessage message = new NetMessage();
+            message.Response = new NetMessageResponse();
+            message.Response.gameEnter = new UserGameEnterResponse();
+            message.Response.gameEnter.Result = Result.Success;
+            message.Response.gameEnter.Errormsg = "None";
+
+            byte[] data = PackageHandler.PackMessage(message);
+            sender.SendData(data, 0, data.Length);
+            sender.Session.Character = character;
+            MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
+        }
+
+        private void OnGameLeave(NetConnection<NetSession> sender, UserGameLeaveRequest request)
+        {
         }
     }
 }

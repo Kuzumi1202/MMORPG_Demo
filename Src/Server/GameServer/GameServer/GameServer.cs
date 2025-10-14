@@ -11,14 +11,15 @@ using System.Threading;
 
 using Network;
 using GameServer.Services;
+using GameServer.Managers;
 
 namespace GameServer
 {
-    class GameServer
+    internal class GameServer
     {
-        Thread thread;
-        bool running = false;
-        NetService network;
+        private NetService network;
+        private Thread thread;
+        private bool running = false;
 
         public bool Init()
         {
@@ -26,6 +27,8 @@ namespace GameServer
             network = new NetService();
             network.Init(Port);
             DBService.Instance.Init();
+            DataManager.Instance.Load();
+            MapService.Instance.Init();
             UserService.Instance.Init();
             thread = new Thread(new ThreadStart(this.Update));
 
@@ -38,7 +41,6 @@ namespace GameServer
             running = true;
             thread.Start();
         }
-
 
         public void Stop()
         {
