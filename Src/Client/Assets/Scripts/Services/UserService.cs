@@ -247,7 +247,7 @@ namespace Services
         }
         private void onCharacterEnter(object sender, MapCharacterEnterResponse message)
         {
-            Debug.LogFormat("onCharacterEnter:{0} [{1}]", message.mapId);
+            Debug.LogFormat("onCharacterEnter:{0}", message.mapId);
             NCharacterInfo info = message.Characters[0];
             User.Instance.CurrentCharacter = info;
             SceneManager.Instance.LoadScene(DataManager.Instance.Maps[message.mapId].Resource);

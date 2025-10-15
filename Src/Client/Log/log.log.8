@@ -1,8 +1,63 @@
-2025-10-14 18:45:42,811 [ 1] INFO  Unity: LoadingManager start
-2025-10-14 18:45:43,029 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2025-10-14 18:45:43,031 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2025-10-15 15:35:36,469 [ 1] INFO  Unity: LoadingManager start
+2025-10-15 15:35:38,499 [ 1] WARN  Unity: BestFit is only supported for dynamic fonts. Font 'Numbers' is not dynamic.
+UnityEngine.Canvas:SendWillRenderCanvases()
+
+2025-10-15 15:35:39,500 [ 1] INFO  Unity: DataManager > DataManager()
+2025-10-15 15:35:45,731 [ 1] INFO  Unity: UserLoginRequest::user :user01 psw:123
+2025-10-15 15:35:45,732 [ 1] INFO  Unity: ConnectToServer() Start 
+2025-10-15 15:35:45,735 [ 1] INFO  Unity: DoConnect
+2025-10-15 15:35:45,737 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2025-10-15 15:35:45,739 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2025-10-15 15:35:45,742 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2025-10-15 15:35:45,816 [ 1] INFO  Unity: OnLogin:Success [None]
+2025-10-15 15:35:45,817 [ 1] INFO  Unity: LoadLevel: CharSelect
+2025-10-15 15:35:45,954 [ 1] INFO  Unity: LevelLoadCompleted:1
+2025-10-15 15:35:46,819 [ 1] INFO  Unity: Select Char:[3]Kuzumi02[Warrior]
+2025-10-15 15:35:47,331 [ 1] INFO  Unity: Select Char:[1]Kuzumi01[Wizard]
+2025-10-15 15:35:48,261 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2025-10-15 15:35:48,296 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2025-10-15 15:35:48,297 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2025-10-15 15:35:48,299 [ 1] INFO  Unity: AddCharacter:1:Kuzumi01 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2025-10-15 15:35:48,300 [ 1] INFO  Unity: AddCharacter:3:Kuzumi02 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2025-10-15 15:35:48,300 [ 1] INFO  Unity: LoadLevel: MainCity
+2025-10-15 15:35:48,302 [ 1] ERROR Unity: Message handler exception:, Index (zero based) must be greater than or equal to zero and less than the size of the argument list., mscorlib,   at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x000e8] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1925 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873 
+  at System.String.Format (System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868 
+  at UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) [0x00005] in C:\buildslave\unity\build\Runtime\Export\Logger\DebugLogHandler.cs:9 
+  at UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) [0x00017] in C:\buildslave\unity\build\Runtime\Export\Logger\Logger.cs:113 
+  at UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) [0x00009] in C:\buildslave\unity\build\Runtime\Export\Debug.bindings.cs:108 
+  at Services.UserService.onCharacterEnter (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse message) [0x0001a] in E:\Project\Unity\Demo_MMO\Src\Client\Assets\Scripts\Services\UserService.cs:250 
+  at (wrapper delegate-invoke) Network.MessageDistributer`1/MessageHandler`1<object, SkillBridge.Message.MapCharacterEnterResponse>:invoke_void__this___object_MapCharacterEnterResponse (object,SkillBridge.Message.MapCharacterEnterResponse)
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[MapCharacterEnterResponse] (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse msg) [0x00000] in <filename unknown>:0 
+2025-10-15 15:35:48,303 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list., System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1925)
+System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1873)
+System.String.Format (System.String format, System.Object[] args) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System/String.cs:1868)
+UnityEngine.DebugLogHandler.LogFormat (LogType logType, UnityEngine.Object context, System.String format, System.Object[] args) (at C:/buildslave/unity/build/Runtime/Export/Logger/DebugLogHandler.cs:9)
+UnityEngine.Logger.LogFormat (LogType logType, System.String format, System.Object[] args) (at C:/buildslave/unity/build/Runtime/Export/Logger/Logger.cs:113)
+UnityEngine.Debug.LogFormat (System.String format, System.Object[] args) (at C:/buildslave/unity/build/Runtime/Export/Debug.bindings.cs:108)
+Services.UserService.onCharacterEnter (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse message) (at Assets/Scripts/Services/UserService.cs:250)
+Network.MessageDistributer`1[System.Object].RaiseEvent[MapCharacterEnterResponse] (System.Object sender, SkillBridge.Message.MapCharacterEnterResponse msg)
+}</args></log4net.Error>
+2025-10-15 15:35:48,624 [ 1] INFO  Unity: LevelLoadCompleted:1
+2025-10-15 15:35:49,139 [ 1] INFO  Unity: MoveForward
+2025-10-15 15:35:49,638 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2025-10-15 15:35:49,735 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
+2025-10-15 15:35:49,752 [ 1] INFO  Unity: Stop
+2025-10-15 15:35:49,818 [ 1] INFO  Unity: SetDirection:(86, -51, 0)
+2025-10-15 15:35:49,918 [ 1] INFO  Unity: SetDirection:(74, -68, 0)
+2025-10-15 15:35:50,001 [ 1] INFO  Unity: SetDirection:(61, -79, 0)
+2025-10-15 15:35:50,084 [ 1] INFO  Unity: SetDirection:(46, -89, 0)
+2025-10-15 15:35:50,167 [ 1] INFO  Unity: MoveForward
+2025-10-15 15:35:50,183 [ 1] INFO  Unity: SetDirection:(27, -96, 0)
+2025-10-15 15:35:50,316 [ 1] INFO  Unity: SetDirection:(9, -100, 0)
+2025-10-15 15:35:50,680 [ 1] INFO  Unity: Stop
+2025-10-15 15:35:51,398 [ 1] INFO  Unity: Character_1_Kuzumi01 OnDestroy :ID:0 POS:(5195, 3843, 820) DIR:(9, -100, 0) SPD:0 
+2025-10-15 15:35:51,399 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2025-10-15 15:35:51,400 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
 
+2025-10-15 15:35:51,401 [ 1] INFO  Unity: Character_3_Kuzumi02 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
