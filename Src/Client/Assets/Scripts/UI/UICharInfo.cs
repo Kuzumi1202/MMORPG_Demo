@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UICharInfo : MonoBehaviour {
-
-
+public class UICharInfo : MonoBehaviour
+{
     public SkillBridge.Message.NCharacterInfo info;
 
     public Text charClass;
@@ -22,16 +21,17 @@ public class UICharInfo : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () {
-		if(info!=null)
+    private void Start()
+    {
+        if (info != null)
         {
             this.charClass.text = this.info.Class.ToString();
             this.charName.text = this.info.Name;
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
+
+    // Update is called once per frame
+    private void Update()
+    {
+    }
 }

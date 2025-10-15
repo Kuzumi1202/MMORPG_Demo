@@ -1,22 +1,21 @@
-﻿using System;
-using Network;
-using UnityEngine;
-
-using Common.Data;
-using SkillBridge.Message;
+﻿using Common.Data;
+using Managers;
 using Models;
+using Network;
+using SkillBridge.Message;
+using System;
+using UnityEngine;
 
 namespace Services
 {
-    class MapService : Singleton<MapService>, IDisposable
+    internal class MapService : Singleton<MapService>, IDisposable
     {
-
         public int CurrentMapId = 0;
+
         public MapService()
         {
             MessageDistributer.Instance.Subscribe<MapCharacterEnterResponse>(this.OnMapCharacterEnter);
             MessageDistributer.Instance.Subscribe<MapCharacterLeaveResponse>(this.OnMapCharacterLeave);
-
         }
 
         public void Dispose()
@@ -27,7 +26,6 @@ namespace Services
 
         public void Init()
         {
-
         }
 
         private void OnMapCharacterEnter(object sender, MapCharacterEnterResponse response)
@@ -50,7 +48,6 @@ namespace Services
 
         private void OnMapCharacterLeave(object sender, MapCharacterLeaveResponse response)
         {
-            
         }
 
         private void EnterMap(int mapId)
@@ -58,6 +55,7 @@ namespace Services
             if (DataManager.Instance.Maps.ContainsKey(mapId))
             {
                 MapDefine map = DataManager.Instance.Maps[mapId];
+                User.Instance.CurrentMapData = map;
                 SceneManager.Instance.LoadScene(map.Resource);
             }
             else

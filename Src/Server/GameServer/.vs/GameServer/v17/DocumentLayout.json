@@ -3,7 +3,16 @@
   "WorkspaceRootPath": "E:\\Project\\Unity\\Demo_MMO\\Src\\Server\\GameServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|E:\\Project\\Unity\\Demo_MMO\\Src\\Server\\GameServer\\gameserver\\gameserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CE169E52-A80E-4C19-B75B-823907B4ECEF}|..\\..\\Lib\\Common\\Common.csproj|e:\\project\\unity\\demo_mmo\\src\\lib\\common\\data\\mapdefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE169E52-A80E-4C19-B75B-823907B4ECEF}|..\\..\\Lib\\Common\\Common.csproj|e:\\project\\unity\\demo_mmo\\src\\lib\\common\\data\\spawntype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE169E52-A80E-4C19-B75B-823907B4ECEF}|..\\..\\Lib\\Common\\Common.csproj|e:\\project\\unity\\demo_mmo\\src\\lib\\common\\data\\teleporterdefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|e:\\project\\unity\\demo_mmo\\src\\server\\gameserver\\gameserver\\gameserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\gameserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +24,7 @@
       "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\models\\map.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|e:\\project\\unity\\demo_mmo\\src\\server\\gameserver\\gameserver\\managers\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|E:\\Project\\Unity\\Demo_MMO\\Src\\Server\\GameServer\\gameserver\\managers\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C54695D-AC9F-455B-846D-0E865991F681}|GameServer\\GameServer.csproj|solutionrelative:gameserver\\managers\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,11 +43,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TeleporterDefine.cs",
+              "DocumentMoniker": "E:\\Project\\Unity\\Demo_MMO\\Src\\Lib\\Common\\Data\\TeleporterDefine.cs",
+              "RelativeDocumentMoniker": "..\\..\\Lib\\Common\\Data\\TeleporterDefine.cs",
+              "ToolTip": "E:\\Project\\Unity\\Demo_MMO\\Src\\Lib\\Common\\Data\\TeleporterDefine.cs",
+              "RelativeToolTip": "..\\..\\Lib\\Common\\Data\\TeleporterDefine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T08:37:37.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SpawnType.cs",
+              "DocumentMoniker": "E:\\Project\\Unity\\Demo_MMO\\Src\\Lib\\Common\\Data\\SpawnType.cs",
+              "RelativeDocumentMoniker": "..\\..\\Lib\\Common\\Data\\SpawnType.cs",
+              "ToolTip": "E:\\Project\\Unity\\Demo_MMO\\Src\\Lib\\Common\\Data\\SpawnType.cs",
+              "RelativeToolTip": "..\\..\\Lib\\Common\\Data\\SpawnType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T08:37:35.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MapDefine.cs",
+              "DocumentMoniker": "E:\\Project\\Unity\\Demo_MMO\\Src\\Lib\\Common\\Data\\MapDefine.cs",
+              "RelativeDocumentMoniker": "..\\..\\Lib\\Common\\Data\\MapDefine.cs",
+              "ToolTip": "E:\\Project\\Unity\\Demo_MMO\\Src\\Lib\\Common\\Data\\MapDefine.cs",
+              "RelativeToolTip": "..\\..\\Lib\\Common\\Data\\MapDefine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T08:37:33.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "GameServer.cs",
               "DocumentMoniker": "E:\\Project\\Unity\\Demo_MMO\\Src\\Server\\GameServer\\GameServer\\GameServer.cs",
               "RelativeDocumentMoniker": "GameServer\\GameServer.cs",
@@ -51,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Map.cs",
               "DocumentMoniker": "E:\\Project\\Unity\\Demo_MMO\\Src\\Server\\GameServer\\GameServer\\Models\\Map.cs",
               "RelativeDocumentMoniker": "GameServer\\Models\\Map.cs",
@@ -59,12 +107,11 @@
               "RelativeToolTip": "GameServer\\Models\\Map.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T10:06:04.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T10:06:04.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "DataManager.cs",
               "DocumentMoniker": "E:\\Project\\Unity\\Demo_MMO\\Src\\Server\\GameServer\\GameServer\\Managers\\DataManager.cs",
               "RelativeDocumentMoniker": "GameServer\\Managers\\DataManager.cs",
@@ -72,12 +119,11 @@
               "RelativeToolTip": "GameServer\\Managers\\DataManager.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAkwCQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T09:45:50.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T09:45:50.466Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MapManager.cs",
               "DocumentMoniker": "E:\\Project\\Unity\\Demo_MMO\\Src\\Server\\GameServer\\GameServer\\Managers\\MapManager.cs",
               "RelativeDocumentMoniker": "GameServer\\Managers\\MapManager.cs",
@@ -85,12 +131,11 @@
               "RelativeToolTip": "GameServer\\Managers\\MapManager.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAxwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T09:45:37.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T09:45:37.415Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "CharacterManager.cs",
               "DocumentMoniker": "E:\\Project\\Unity\\Demo_MMO\\Src\\Server\\GameServer\\GameServer\\Managers\\CharacterManager.cs",
               "RelativeDocumentMoniker": "GameServer\\Managers\\CharacterManager.cs",
@@ -102,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "UserSerevice.cs",
               "DocumentMoniker": "E:\\Project\\Unity\\Demo_MMO\\Src\\Server\\GameServer\\GameServer\\Services\\UserSerevice.cs",
               "RelativeDocumentMoniker": "GameServer\\Services\\UserSerevice.cs",

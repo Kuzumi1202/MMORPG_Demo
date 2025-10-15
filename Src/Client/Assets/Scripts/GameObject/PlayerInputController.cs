@@ -110,6 +110,8 @@ public class PlayerInputController : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (this.character == null) return;
+
         Vector3 offset = this.rb.transform.position - lastPos;
         this.speed = (int)(offset.magnitude * 100f / Time.deltaTime);
         //Debug.LogFormat("LateUpdate velocity {0} : {1}", this.rb.velocity.magnitude, this.speed);
