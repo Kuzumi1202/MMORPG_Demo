@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using SkillBridge.Message;
 using UnityEngine;
-using SkillBridge.Message;
 
 namespace Entities
 {
@@ -11,19 +7,21 @@ namespace Entities
     {
         public int entityId;
 
-
         public Vector3Int position;
         public Vector3Int direction;
         public int speed;
 
-
         private NEntity entityData;
+
         public NEntity EntityData
         {
-            get {
+            get
+            {
+                UpdateEntityData();
                 return entityData;
             }
-            set {
+            set
+            {
                 entityData = value;
                 this.SetEntityData(value);
             }
@@ -53,6 +51,13 @@ namespace Entities
             this.position = this.position.FromNVector3(entity.Position);
             this.direction = this.direction.FromNVector3(entity.Direction);
             this.speed = entity.Speed;
+        }
+
+        private void UpdateEntityData()
+        {
+            entityData.Position.FromVector3Int(this.position);
+            entityData.Direction.FromVector3Int(this.direction);
+            entityData.Speed = this.speed;
         }
     }
 }

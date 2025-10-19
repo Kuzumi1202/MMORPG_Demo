@@ -5,8 +5,19 @@ using UnityEngine;
 
 namespace Managers
 {
-    class MinimapManager : Singleton<MinimapManager>
+    internal class MinimapManager : Singleton<MinimapManager>
     {
+        public Transform PlayerTransform
+        {
+            get
+            {
+                if (User.Instance.CurrentCharacter == null)
+                    return null;
+                else
+                    return User.Instance.CurrentCharacterObject.transform;
+            }
+        }
+
         public Sprite LoadCurrentMinimap()
         {
             return Resloader.Load<Sprite>("UI/Minimap/" + User.Instance.CurrentMapData.MiniMap);

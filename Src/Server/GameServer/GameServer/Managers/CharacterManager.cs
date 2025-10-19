@@ -1,15 +1,11 @@
 ﻿using Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SkillBridge.Message;
 using GameServer.Entities;
+using SkillBridge.Message;
+using System.Collections.Generic;
 
 namespace GameServer.Managers
 {
-    class CharacterManager : Singleton<CharacterManager>
+    internal class CharacterManager : Singleton<CharacterManager>
     {
         public Dictionary<int, Character> Characters = new Dictionary<int, Character>();
 
@@ -23,7 +19,6 @@ namespace GameServer.Managers
 
         public void Init()
         {
-
         }
 
         public void Clear()
@@ -34,14 +29,20 @@ namespace GameServer.Managers
         public Character AddCharacter(TCharacter cha)
         {
             Character character = new Character(CharacterType.Player, cha);
-            this.Characters[cha.ID] = character;
+            EntityManager.Instance.AddEntity(cha.MapID, character);
+            character.Info.Id = character.Id;
+            this.Characters[character.Id] = character;
             return character;
         }
 
-
         public void RemoveCharacter(int characterId)
         {
-            this.Characters.Remove(characterId);
+            if (this.Characters.ContainsKey(characterId))
+            {
+                var cha = this.Characters[characterId];
+                EntityManager.Instance.RemoveEntity(cha.Data.MapID, cha);
+                this.Characters.Remove(characterId);
+            }
         }
     }
 }

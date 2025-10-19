@@ -5,29 +5,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Common;
 
 namespace GameServer.Entities
 {
-    class Entity
+    internal class Entity
     {
         public int entityId
         {
             get { return this.entityData.Id; }
         }
 
-
         private Vector3Int position;
 
         public Vector3Int Position
         {
             get { return position; }
-            set {
+            set
+            {
                 position = value;
                 this.entityData.Position = position;
             }
         }
 
         private Vector3Int direction;
+
         public Vector3Int Direction
         {
             get { return direction; }
@@ -39,6 +41,7 @@ namespace GameServer.Entities
         }
 
         private int speed;
+
         public int Speed
         {
             get { return speed; }
@@ -50,6 +53,7 @@ namespace GameServer.Entities
         }
 
         private NEntity entityData;
+
         public NEntity EntityData
         {
             get
@@ -63,7 +67,7 @@ namespace GameServer.Entities
             }
         }
 
-        public Entity(Vector3Int pos,Vector3Int dir)
+        public Entity(Vector3Int pos, Vector3Int dir)
         {
             this.entityData = new NEntity();
             this.entityData.Position = pos;

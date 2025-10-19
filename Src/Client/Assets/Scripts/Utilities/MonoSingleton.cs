@@ -1,31 +1,38 @@
 ﻿using UnityEngine;
 
-
 public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
 {
     public bool global = true;
-    static T instance;
+    private static T instance;
+
     public static T Instance
     {
         get
         {
             if (instance == null)
             {
-                instance =(T)FindObjectOfType<T>();
+                instance = (T)FindObjectOfType<T>();
             }
             return instance;
         }
-
     }
 
-    void Start()
+    private void Start()
     {
-        if (global) DontDestroyOnLoad(this.gameObject);
+        if (global)
+        {
+            if (instance != null && instance != this.gameObject.GetComponent<T>())
+            {
+                Destroy(this.gameObject);
+                return;
+            }
+            DontDestroyOnLoad(this.gameObject);
+            instance = this.gameObject.GetComponent<T>();
+        }
         this.OnStart();
     }
 
     protected virtual void OnStart()
     {
-
     }
 }

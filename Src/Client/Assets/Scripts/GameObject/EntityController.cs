@@ -1,13 +1,11 @@
-﻿using SkillBridge.Message;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using Common;
 using Entities;
+using Managers;
+using SkillBridge.Message;
+using UnityEngine;
 
-
-public class EntityController : MonoBehaviour
+public class EntityController : MonoBehaviour, IEntityNotify
 {
-
     public Animator anim;
     public Rigidbody rb;
     private AnimatorStateInfo currentBaseState;
@@ -16,10 +14,10 @@ public class EntityController : MonoBehaviour
 
     public UnityEngine.Vector3 position;
     public UnityEngine.Vector3 direction;
-    Quaternion rotation;
+    private Quaternion rotation;
 
     public UnityEngine.Vector3 lastPosition;
-    Quaternion lastRotation;
+    private Quaternion lastRotation;
 
     public float speed;
     public float animSpeed = 1.5f;
@@ -28,9 +26,11 @@ public class EntityController : MonoBehaviour
     public bool isPlayer = false;
 
     // Use this for initialization
-    void Start () {
+    private void Start()
+    {
         if (entity != null)
         {
+            EntityManager.Instance.RegisterEntityChangeNotify(entity.entityId, this);
             this.UpdateTransform();
         }
 
@@ -38,7 +38,7 @@ public class EntityController : MonoBehaviour
             rb.useGravity = false;
     }
 
-    void UpdateTransform()
+    private void UpdateTransform()
     {
         this.position = GameObjectTool.LogicToWorld(entity.position);
         this.direction = GameObjectTool.LogicToWorld(entity.direction);
@@ -48,8 +48,8 @@ public class EntityController : MonoBehaviour
         this.lastPosition = this.position;
         this.lastRotation = this.rotation;
     }
-	
-    void OnDestroy()
+
+    private void OnDestroy()
     {
         if (entity != null)
             Debug.LogFormat("{0} OnDestroy :ID:{1} POS:{2} DIR:{3} SPD:{4} ", this.name, entity.entityId, entity.position, entity.direction, entity.speed);
@@ -61,7 +61,7 @@ public class EntityController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (this.entity == null)
             return;
@@ -76,21 +76,36 @@ public class EntityController : MonoBehaviour
 
     public void OnEntityEvent(EntityEvent entityEvent)
     {
-        switch(entityEvent)
+        switch (entityEvent)
         {
             case EntityEvent.Idle:
                 anim.SetBool("Move", false);
                 anim.SetTrigger("Idle");
                 break;
+
             case EntityEvent.MoveFwd:
                 anim.SetBool("Move", true);
                 break;
+
             case EntityEvent.MoveBack:
                 anim.SetBool("Move", true);
                 break;
+
             case EntityEvent.Jump:
                 anim.SetTrigger("Jump");
                 break;
         }
+    }
+
+    public void OnEntityRemoved()
+    {
+        if (UIWorldElementManager.Instance != null)
+            UIWorldElementManager.Instance.RemoveCharacterNameBar(this.transform);
+        Destroy(this.gameObject);
+    }
+
+    public void OnEntityChanged(Entity entity)
+    {
+        Debug.LogFormat("OnEntityChanged :ID:{0} POS:{1} DIR:{2} SPD:{3} ", entity.entityId, entity.position, entity.direction, entity.speed);
     }
 }
