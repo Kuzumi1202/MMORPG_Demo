@@ -29,7 +29,10 @@ namespace GameServer.Models
 
         internal MapDefine Define;
 
-        private Dictionary<int, MapCharacter> MapCharacters = new Dictionary<int, MapCharacter>();
+        /// <summary>
+        /// 地图中的角色，以CharacterID为Key
+        /// </summary>
+        Dictionary<int, MapCharacter> MapCharacters = new Dictionary<int, MapCharacter>();
 
         internal Map(MapDefine define)
         {

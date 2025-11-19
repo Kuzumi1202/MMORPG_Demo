@@ -5,25 +5,19 @@ using UnityEngine.Events;
 
 public class SceneManager : MonoSingleton<SceneManager>
 {
-    UnityAction<float> onProgress = null;
+    private UnityAction<float> onProgress = null;
 
     // Use this for initialization
     protected override void OnStart()
     {
-        
     }
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
 
     public void LoadScene(string name)
     {
         StartCoroutine(LoadLevel(name));
     }
 
-    IEnumerator LoadLevel(string name)
+    private IEnumerator LoadLevel(string name)
     {
         Debug.LogFormat("LoadLevel: {0}", name);
         AsyncOperation async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(name);
