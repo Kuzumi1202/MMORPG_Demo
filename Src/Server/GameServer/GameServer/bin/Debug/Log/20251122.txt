@@ -1,0 +1,249 @@
+
+2025-11-22 13:37:10,248 [1] [INFO ] [GameServer] ：Game Server Init
+2025-11-22 13:37:10,449 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-11-22 13:37:10,620 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2025-11-22 13:37:10,621 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-11-22 13:37:10,622 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-11-22 13:37:10,622 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日空间
+2025-11-22 13:37:10,623 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-11-22 13:37:10,649 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:37:10,649 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:37:10,650 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:37:10,650 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:37:10,650 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:37:10,650 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:37:10,650 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:37:10,650 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:37:10,755 [1] [WARN ] [GameServer] ：NetService Started
+2025-11-22 13:38:08,849 [1] [INFO ] [GameServer] ：Game Server Init
+2025-11-22 13:38:09,006 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-11-22 13:38:09,151 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2025-11-22 13:38:09,157 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-11-22 13:38:09,162 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-11-22 13:38:09,164 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日空间
+2025-11-22 13:38:09,165 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-11-22 13:38:09,206 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:38:09,218 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:38:09,246 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:38:09,246 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:38:09,258 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:38:09,283 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:38:09,284 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:38:09,284 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-22 13:38:09,408 [1] [WARN ] [GameServer] ：NetService Started
+2025-11-22 13:38:22,849 [3] [WARN ] [GameServer] ：Client[127.0.0.1:59075]] Connected
+2025-11-22 13:38:22,893 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:21
+2025-11-22 13:38:22,969 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user01  Pass:123
+2025-11-22 13:38:27,701 [17] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-11-22 13:38:27,703 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:2:Kuzumi02 Map:1
+2025-11-22 13:38:27,752 [6] [INFO ] [GameServer] ：HasItem:[2]True
+2025-11-22 13:38:27,752 [6] [INFO ] [GameServer] ：[2]GetItem[2ID:2,Count:5]
+2025-11-22 13:38:27,753 [6] [INFO ] [GameServer] ：Item:[2][ID:2,Count:5]
+2025-11-22 13:38:27,803 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-11-22 13:40:14,678 [17] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-11-22 13:40:14,694 [17] [WARN ] [GameServer] ：Client[] Disconnected
+2025-11-22 13:42:47,632 [17] [WARN ] [GameServer] ：Client[127.0.0.1:61440]] Connected
+2025-11-22 13:42:47,769 [17] [WARN ] [GameServer] ：Client[] DataReceived Len:21
+2025-11-22 13:42:47,769 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user01  Pass:123
+2025-11-22 13:42:53,553 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2025-11-22 13:42:53,553 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:2:Kuzumi02 Map:1
+2025-11-22 13:42:53,553 [5] [INFO ] [GameServer] ：HasItem:[2]True
+2025-11-22 13:42:53,553 [5] [INFO ] [GameServer] ：[2]GetItem[2ID:2,Count:5]
+2025-11-22 13:42:53,554 [5] [INFO ] [GameServer] ：Item:[2][ID:2,Count:5]
+2025-11-22 13:42:53,554 [5] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:2
+2025-11-22 13:44:22,585 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:22,588 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(5000,4000,820),dir:(98,-18,0),spd:0
+2025-11-22 13:44:22,681 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:22,681 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(5000,4000,820),dir:(93,-36,0),spd:0
+2025-11-22 13:44:22,779 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:22,780 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(5000,4000,820),dir:(84,-54,0),spd:0
+2025-11-22 13:44:22,863 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:22,863 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(5000,4000,820),dir:(73,-68,0),spd:0
+2025-11-22 13:44:22,962 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:22,963 [9] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(5000,4000,820),dir:(58,-82,0),spd:0
+2025-11-22 13:44:23,045 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:23,045 [10] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(5000,4000,820),dir:(43,-90,0),spd:0
+2025-11-22 13:44:23,129 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:23,129 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(5000,4000,820),dir:(26,-97,0),spd:0
+2025-11-22 13:44:23,228 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:23,228 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(5000,4000,820),dir:(6,-100,0),spd:0
+2025-11-22 13:44:23,310 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2025-11-22 13:44:23,311 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(5000,4000,820),dir:(-12,-99,0),spd:0
+2025-11-22 13:44:23,426 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:51
+2025-11-22 13:44:23,426 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(5000,4000,820),dir:(-31,-95,0),spd:0
+2025-11-22 13:44:23,626 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:56
+2025-11-22 13:44:23,627 [9] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:MoveFwd Entity:(2:pos:(4998,3995,820),dir:(-31,-95,0),spd:300
+2025-11-22 13:44:24,140 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:24,140 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4936,3841,820),dir:(-48,-88,0),spd:300
+2025-11-22 13:44:24,835 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:53
+2025-11-22 13:44:24,835 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:Idle Entity:(2:pos:(4856,3681,820),dir:(-48,-88,0),spd:0
+2025-11-22 13:44:27,337 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:56
+2025-11-22 13:44:27,338 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:MoveFwd Entity:(2:pos:(4854,3677,820),dir:(-48,-88,0),spd:300
+2025-11-22 13:44:27,967 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:27,967 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4778,3524,820),dir:(-32,-95,0),spd:300
+2025-11-22 13:44:28,067 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:28,068 [9] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4767,3494,820),dir:(-13,-99,0),spd:300
+2025-11-22 13:44:28,149 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:28,150 [10] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4763,3469,820),dir:(5,-100,0),spd:300
+2025-11-22 13:44:28,249 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:28,249 [11] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4764,3439,820),dir:(24,-97,0),spd:300
+2025-11-22 13:44:28,496 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:28,496 [12] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4778,3364,820),dir:(6,-100,0),spd:300
+2025-11-22 13:44:28,597 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:28,597 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4777,3334,820),dir:(-12,-99,0),spd:300
+2025-11-22 13:44:28,695 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:28,695 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4771,3309,820),dir:(-30,-96,0),spd:300
+2025-11-22 13:44:28,796 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:28,796 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4759,3280,820),dir:(-49,-87,0),spd:300
+2025-11-22 13:44:28,894 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:28,894 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4746,3256,820),dir:(-66,-75,0),spd:300
+2025-11-22 13:44:28,994 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:28,994 [9] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4727,3233,820),dir:(-80,-60,0),spd:300
+2025-11-22 13:44:29,077 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:29,077 [10] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4707,3219,820),dir:(-89,-45,0),spd:300
+2025-11-22 13:44:29,176 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:29,177 [11] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4682,3208,820),dir:(-97,-26,0),spd:300
+2025-11-22 13:44:29,259 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:29,259 [12] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4657,3204,820),dir:(-100,-9,0),spd:300
+2025-11-22 13:44:29,375 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:29,375 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4622,3205,820),dir:(-100,10,0),spd:300
+2025-11-22 13:44:29,889 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:29,889 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4461,3188,805),dir:(-100,10,0),spd:300
+2025-11-22 13:44:30,055 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2025-11-22 13:44:30,055 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:Idle Entity:(2:pos:(4416,3197,805),dir:(-100,10,0),spd:0
+2025-11-22 13:44:30,303 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:30,303 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4416,3197,805),dir:(-96,29,0),spd:0
+2025-11-22 13:44:30,402 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:30,402 [9] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4416,3197,805),dir:(-88,48,0),spd:0
+2025-11-22 13:44:30,502 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:30,502 [10] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4416,3197,805),dir:(-76,65,0),spd:0
+2025-11-22 13:44:30,650 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:30,650 [11] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4416,3197,805),dir:(-63,78,0),spd:0
+2025-11-22 13:44:33,550 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:33,550 [12] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4416,3197,805),dir:(-76,66,0),spd:0
+2025-11-22 13:44:33,649 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:44:33,649 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4416,3197,805),dir:(-87,50,0),spd:0
+2025-11-22 13:44:33,716 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:47
+2025-11-22 13:44:33,717 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:MoveFwd Entity:(2:pos:(4412,3200,805),dir:(-87,50,0),spd:300
+2025-11-22 13:44:33,782 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:33,782 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4395,3211,805),dir:(-94,33,0),spd:300
+2025-11-22 13:44:34,180 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:34,181 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4275,3258,805),dir:(-99,16,0),spd:300
+2025-11-22 13:44:34,313 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:34,313 [9] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4235,3265,805),dir:(-100,-4,0),spd:300
+2025-11-22 13:44:34,346 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:53
+2025-11-22 13:44:34,347 [10] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:Idle Entity:(2:pos:(4235,3265,805),dir:(-100,-4,0),spd:0
+2025-11-22 13:44:34,378 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:56
+2025-11-22 13:44:34,379 [11] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:MoveFwd Entity:(2:pos:(4225,3265,805),dir:(-100,-4,0),spd:300
+2025-11-22 13:44:34,411 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:34,412 [12] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4215,3264,805),dir:(-97,-24,0),spd:300
+2025-11-22 13:44:34,544 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:34,544 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4175,3255,805),dir:(-91,-42,0),spd:300
+2025-11-22 13:44:34,876 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:34,876 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4080,3218,805),dir:(-97,-25,0),spd:300
+2025-11-22 13:44:34,974 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:54
+2025-11-22 13:44:34,975 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4050,3213,805),dir:(-100,-6,0),spd:300
+2025-11-22 13:44:35,074 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:35,074 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(4020,3214,805),dir:(-99,14,0),spd:300
+2025-11-22 13:44:35,223 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:35,223 [9] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3975,3224,805),dir:(-95,32,0),spd:300
+2025-11-22 13:44:35,919 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:35,919 [10] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3792,3265,805),dir:(-95,32,0),spd:300
+2025-11-22 13:44:37,013 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:37,013 [11] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3468,3396,805),dir:(-87,50,0),spd:300
+2025-11-22 13:44:37,112 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:37,112 [12] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3444,3414,805),dir:(-75,67,0),spd:300
+2025-11-22 13:44:37,210 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:37,211 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3421,3433,805),dir:(-59,81,0),spd:300
+2025-11-22 13:44:37,311 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:37,312 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3404,3458,805),dir:(-42,91,0),spd:300
+2025-11-22 13:44:37,459 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:37,460 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3387,3503,805),dir:(-24,97,0),spd:300
+2025-11-22 13:44:39,298 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:39,298 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3265,4004,805),dir:(-24,97,0),spd:300
+2025-11-22 13:44:39,347 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:39,349 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3263,4019,805),dir:(-6,100,0),spd:300
+2025-11-22 13:44:39,463 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:39,463 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3264,4054,805),dir:(13,99,0),spd:300
+2025-11-22 13:44:39,547 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:39,547 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3270,4079,805),dir:(30,95,0),spd:300
+2025-11-22 13:44:39,647 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:39,648 [9] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3282,4108,805),dir:(47,88,0),spd:300
+2025-11-22 13:44:39,845 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:39,845 [10] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3307,4156,805),dir:(62,79,0),spd:300
+2025-11-22 13:44:41,403 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:41,403 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3585,4528,805),dir:(45,89,0),spd:300
+2025-11-22 13:44:41,502 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:41,502 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3596,4553,805),dir:(27,96,0),spd:300
+2025-11-22 13:44:41,618 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:41,619 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3602,4588,805),dir:(8,100,0),spd:300
+2025-11-22 13:44:42,760 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:42,760 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3603,4933,805),dir:(26,96,0),spd:300
+2025-11-22 13:44:42,844 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:42,844 [9] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3609,4958,805),dir:(43,90,0),spd:300
+2025-11-22 13:44:42,943 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:42,944 [10] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3622,4987,805),dir:(61,80,0),spd:300
+2025-11-22 13:44:43,059 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:43,059 [11] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3641,5010,805),dir:(76,65,0),spd:300
+2025-11-22 13:44:43,158 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:43,159 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3665,5027,805),dir:(88,48,0),spd:300
+2025-11-22 13:44:43,258 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:43,259 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3690,5038,805),dir:(96,29,0),spd:300
+2025-11-22 13:44:43,340 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-22 13:44:43,340 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3715,5043,805),dir:(99,12,0),spd:300
+2025-11-22 13:44:43,424 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:43,424 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3740,5047,805),dir:(100,-6,0),spd:300
+2025-11-22 13:44:43,540 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:44:43,540 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:None Entity:(2:pos:(3775,5046,805),dir:(97,-24,0),spd:300
+2025-11-22 13:44:44,003 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2025-11-22 13:44:44,003 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:2:Kuzumi02 Entity.Id:2 Evt:Idle Entity:(2:pos:(3910,5019,805),dir:(97,-24,0),spd:0
+2025-11-22 13:47:27,612 [23] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:2
+2025-11-22 13:47:27,612 [23] [WARN ] [GameServer] ：Client[] Disconnected
+2025-11-22 13:48:23,143 [30] [WARN ] [GameServer] ：Client[127.0.0.1:50937]] Connected
+2025-11-22 13:48:23,182 [32] [WARN ] [GameServer] ：Client[] DataReceived Len:21
+2025-11-22 13:48:23,182 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user01  Pass:123
+2025-11-22 13:48:24,587 [30] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2025-11-22 13:48:24,587 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:Kuzumi01 Map:1
+2025-11-22 13:48:24,589 [6] [INFO ] [GameServer] ：HasItem:[2]True
+2025-11-22 13:48:24,589 [6] [INFO ] [GameServer] ：[1]GetItem[2ID:2,Count:5]
+2025-11-22 13:48:24,589 [6] [INFO ] [GameServer] ：Item:[2][ID:2,Count:5]
+2025-11-22 13:48:24,589 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:3
+2025-11-22 13:48:26,764 [32] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:48:26,764 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:3:Kuzumi01 Entity.Id:3 Evt:None Entity:(3:pos:(5000,4000,820),dir:(98,-18,0),spd:0
+2025-11-22 13:48:26,863 [32] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:48:26,863 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:3:Kuzumi01 Entity.Id:3 Evt:None Entity:(3:pos:(5000,4000,820),dir:(94,-35,0),spd:0
+2025-11-22 13:48:26,946 [32] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:48:26,946 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:3:Kuzumi01 Entity.Id:3 Evt:None Entity:(3:pos:(5000,4000,820),dir:(86,-51,0),spd:0
+2025-11-22 13:48:27,045 [32] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:48:27,046 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:3:Kuzumi01 Entity.Id:3 Evt:None Entity:(3:pos:(5000,4000,820),dir:(74,-67,0),spd:0
+2025-11-22 13:48:27,112 [32] [WARN ] [GameServer] ：Client[] DataReceived Len:47
+2025-11-22 13:48:27,112 [9] [INFO ] [GameServer] ：OnMapEntitySync: characterID:3:Kuzumi01 Entity.Id:3 Evt:MoveFwd Entity:(3:pos:(5004,3997,820),dir:(74,-67,0),spd:300
+2025-11-22 13:48:27,195 [32] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:48:27,195 [10] [INFO ] [GameServer] ：OnMapEntitySync: characterID:3:Kuzumi01 Entity.Id:3 Evt:None Entity:(3:pos:(5023,3981,820),dir:(60,-80,0),spd:300
+2025-11-22 13:48:27,328 [32] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2025-11-22 13:48:27,328 [11] [INFO ] [GameServer] ：OnMapEntitySync: characterID:3:Kuzumi01 Entity.Id:3 Evt:Idle Entity:(3:pos:(5044,3953,820),dir:(60,-80,0),spd:0
+2025-11-22 13:48:55,042 [32] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:3
+2025-11-22 13:48:55,042 [32] [WARN ] [GameServer] ：Client[] Disconnected
+2025-11-22 13:51:17,935 [32] [WARN ] [GameServer] ：Client[127.0.0.1:50067]] Connected
+2025-11-22 13:51:17,975 [32] [WARN ] [GameServer] ：Client[] DataReceived Len:21
+2025-11-22 13:51:17,975 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user01  Pass:123
+2025-11-22 13:51:19,487 [39] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2025-11-22 13:51:19,487 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:Kuzumi01 Map:1
+2025-11-22 13:51:19,487 [5] [INFO ] [GameServer] ：HasItem:[2]True
+2025-11-22 13:51:19,488 [5] [INFO ] [GameServer] ：[1]GetItem[2ID:2,Count:5]
+2025-11-22 13:51:19,488 [5] [INFO ] [GameServer] ：Item:[2][ID:2,Count:5]
+2025-11-22 13:51:19,488 [5] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:4
+2025-11-22 13:51:22,325 [40] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-22 13:51:22,325 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:4:Kuzumi01 Entity.Id:4 Evt:None Entity:(4:pos:(5000,4000,820),dir:(98,-18,0),spd:0
+2025-11-22 13:51:22,391 [40] [WARN ] [GameServer] ：Client[] DataReceived Len:47
+2025-11-22 13:51:22,393 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:4:Kuzumi01 Entity.Id:4 Evt:MoveFwd Entity:(4:pos:(5005,3999,820),dir:(98,-18,0),spd:300
+2025-11-22 13:51:22,440 [40] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:51:22,440 [7] [INFO ] [GameServer] ：OnMapEntitySync: characterID:4:Kuzumi01 Entity.Id:4 Evt:None Entity:(4:pos:(5020,3995,820),dir:(93,-36,0),spd:300
+2025-11-22 13:51:22,540 [40] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:51:22,541 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:4:Kuzumi01 Entity.Id:4 Evt:None Entity:(4:pos:(5049,3982,820),dir:(84,-54,0),spd:300
+2025-11-22 13:51:22,657 [40] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-22 13:51:22,658 [9] [INFO ] [GameServer] ：OnMapEntitySync: characterID:4:Kuzumi01 Entity.Id:4 Evt:None Entity:(4:pos:(5077,3961,820),dir:(73,-69,0),spd:300
+2025-11-22 13:51:22,955 [40] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2025-11-22 13:51:22,955 [10] [INFO ] [GameServer] ：OnMapEntitySync: characterID:4:Kuzumi01 Entity.Id:4 Evt:Idle Entity:(4:pos:(5145,3910,820),dir:(73,-69,0),spd:0
+2025-11-22 13:51:43,178 [40] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:4
+2025-11-22 13:51:43,178 [40] [WARN ] [GameServer] ：Client[] Disconnected

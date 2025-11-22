@@ -1,8 +1,124 @@
-2025-10-21 01:28:43,972 [ 1] INFO  Unity: LoadingManager start
-2025-10-21 01:28:44,722 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2025-10-21 01:28:44,724 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2025-11-21 20:24:01,440 [ 1] INFO  Unity: LoadingManager start
+2025-11-21 20:24:03,573 [ 1] WARN  Unity: BestFit is only supported for dynamic fonts. Font 'Numbers' is not dynamic.
+UnityEngine.Canvas:SendWillRenderCanvases()
+
+2025-11-21 20:24:04,573 [ 1] INFO  Unity: DataManager > DataManager()
+2025-11-21 20:24:10,226 [ 1] INFO  Unity: UserLoginRequest::user :user01 psw:123
+2025-11-21 20:24:10,226 [ 1] INFO  Unity: ConnectToServer() Start 
+2025-11-21 20:24:10,231 [ 1] INFO  Unity: DoConnect
+2025-11-21 20:24:10,232 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2025-11-21 20:24:10,235 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2025-11-21 20:24:10,237 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2025-11-21 20:24:12,021 [ 1] INFO  Unity: OnLogin:Success [None]
+2025-11-21 20:24:12,022 [ 1] INFO  Unity: LoadLevel: CharSelect
+2025-11-21 20:24:12,170 [ 1] INFO  Unity: LevelLoadCompleted:1
+2025-11-21 20:24:12,995 [ 1] INFO  Unity: Select Char:[1]Kuzumi01[Warrior]
+2025-11-21 20:24:13,957 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2025-11-21 20:24:14,092 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2025-11-21 20:24:14,095 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Models.Item..ctor (SkillBridge.Message.NItemInfo item) [0x00030] in E:\Project\Unity\Demo_MMO\Src\Client\Assets\Scripts\Models\Item.cs:19 
+  at Managers.ItemManager.Init (System.Collections.Generic.List`1 items) [0x00023] in E:\Project\Unity\Demo_MMO\Src\Client\Assets\Scripts\Managers\ItemManager.cs:23 
+  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00050] in E:\Project\Unity\Demo_MMO\Src\Client\Assets\Scripts\Services\UserService.cs:248 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00000] in <filename unknown>:0 
+2025-11-21 20:24:14,096 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Models.Item..ctor (SkillBridge.Message.NItemInfo item) (at Assets/Scripts/Models/Item.cs:19)
+Managers.ItemManager.Init (System.Collections.Generic.List`1 items) (at Assets/Scripts/Managers/ItemManager.cs:23)
+Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:248)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg)
+}</args></log4net.Error>
+2025-11-21 20:24:14,105 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2025-11-21 20:24:14,106 [ 1] INFO  Unity: AddCharacter:1:Kuzumi01 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2025-11-21 20:24:14,109 [ 1] INFO  Unity: LoadLevel: MainCity
+2025-11-21 20:24:14,110 [ 1] INFO  Unity: onCharacterEnter:1
+2025-11-21 20:24:14,111 [ 1] INFO  Unity: LoadLevel: MainCity
+2025-11-21 20:24:14,606 [ 1] WARN  Unity: GameObjectManager[-1000036] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
+
+2025-11-21 20:24:14,616 [ 1] WARN  Unity: MainPlayerCamera[-998442] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
+
+2025-11-21 20:24:14,616 [ 1] WARN  Unity: UIWorldElementManager[-996862] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
+
+2025-11-21 20:24:14,616 [ 1] WARN  Unity: UIMain[104022] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
+
+2025-11-21 20:24:14,639 [ 1] INFO  Unity: LevelLoadCompleted:1
+2025-11-21 20:24:14,642 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
+NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
+}</args></log4net.Error>
+2025-11-21 20:24:14,643 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
+NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
+}</args></log4net.Error>
+2025-11-21 20:24:14,643 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
+NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
+}</args></log4net.Error>
+2025-11-21 20:24:14,644 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
+NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
+}</args></log4net.Error>
+2025-11-21 20:24:14,961 [ 1] WARN  Unity: GameObjectManager[-1005638] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
+
+2025-11-21 20:24:14,961 [ 1] WARN  Unity: MainPlayerCamera[-1004044] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
+
+2025-11-21 20:24:14,961 [ 1] WARN  Unity: UIWorldElementManager[-1002464] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
+
+2025-11-21 20:24:14,962 [ 1] WARN  Unity: UIMain[107518] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
+
+2025-11-21 20:24:14,982 [ 1] INFO  Unity: LevelLoadCompleted:1
+2025-11-21 20:24:14,983 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
+NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
+}</args></log4net.Error>
+2025-11-21 20:24:14,983 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
+NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
+}</args></log4net.Error>
+2025-11-21 20:24:14,984 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
+NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
+}</args></log4net.Error>
+2025-11-21 20:24:14,984 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
+NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
+}</args></log4net.Error>
+2025-11-21 20:24:15,569 [ 1] WARN  Unity: The referenced script (Unknown) on this Behaviour is missing!
+UnityEngine.Resources:Load(String)
+UIManager:Show() (at Assets/Scripts/UI/UIManager.cs:39)
+UIMain:OnClickBag() (at Assets/Scripts/UI/UIMain.cs:34)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2025-11-21 20:24:15,571 [ 1] WARN  Unity: The referenced script on this Behaviour (Game Object 'UIBagItem') is missing!
+UnityEngine.Resources:Load(String)
+UIManager:Show() (at Assets/Scripts/UI/UIManager.cs:39)
+UIMain:OnClickBag() (at Assets/Scripts/UI/UIMain.cs:34)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2025-11-21 20:24:15,601 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIBag+<InitBags>c__Iterator0.MoveNext () (at Assets/Scripts/UI/UIBag.cs:32)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at C:/buildslave/unity/build/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+UIBag:Start() (at Assets/Scripts/UI/UIBag.cs:27)
+}</args></log4net.Error>
+2025-11-21 20:24:38,723 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2025-11-21 20:24:38,723 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
-UnityEngine.GUIUtility:ProcessEvent(Int32, IntPtr)
 
+2025-11-21 20:24:38,725 [ 1] INFO  Unity: Character_1_Kuzumi01 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
