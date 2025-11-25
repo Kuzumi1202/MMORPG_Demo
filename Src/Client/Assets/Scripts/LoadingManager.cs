@@ -1,4 +1,5 @@
-﻿using Services;
+﻿using Managers;
+using Services;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,6 +35,9 @@ public class LoadingManager : MonoBehaviour
         //Init basic services
         MapService.Instance.Init();
         UserService.Instance.Init();
+
+        //Init
+        ShopManager.Instance.Init();
 
         // Fake Loading Simulate
         for (float i = 50; i < 100;)

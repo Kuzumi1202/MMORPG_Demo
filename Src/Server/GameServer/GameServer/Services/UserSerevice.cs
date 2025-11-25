@@ -111,6 +111,7 @@ namespace GameServer.Services
                 MapPosX = 5000, //初始出生位置X
                 MapPosY = 4000, //初始出生位置Y
                 MapPosZ = 820,
+                Gold = 10000, // 初始化金币
             };
 
             var bag = new TCharacterBag();
@@ -119,7 +120,20 @@ namespace GameServer.Services
             bag.Unlocked = 20;
             TCharacterItem it = new TCharacterItem();
             character.Bag = DBService.Instance.Entities.CharacterBags.Add(bag);
-
+            // 道具初始化
+            character.Items.Add(new TCharacterItem()
+            {
+                Owner = character,
+                ItemID = 1,
+                ItemCount = 20,
+            });
+            character.Items.Add(new TCharacterItem()
+            {
+                Owner = character,
+                ItemID = 2,
+                ItemCount = 10,
+            });
+            //
             character = DBService.Instance.Entities.Characters.Add(character);
             sender.Session.User.Player.Characters.Add(character);
             DBService.Instance.Entities.SaveChanges();
@@ -164,17 +178,12 @@ namespace GameServer.Services
             int itemId = 2;
             bool hasItem = character.ItemManager.HasItem(itemId);
             Log.InfoFormat("HasItem:[{0}]{1}", itemId, hasItem);
-            if (hasItem)
-            {
-                //character.ItemManager.RemoveItem(itemId, 1);
-            }
-            else
+            if (!hasItem)
             {
                 character.ItemManager.AddItem(1, 200);
                 character.ItemManager.AddItem(2, 100);
-                character.ItemManager.AddItem(3, 30);
-                character.ItemManager.AddItem(4, 120);
             }
+         
             Models.Item item = character.ItemManager.GetItem(itemId);
             Log.InfoFormat("Item:[{0}][{1}]", itemId, item);
             DBService.Instance.Save();

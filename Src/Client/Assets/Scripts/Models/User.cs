@@ -21,6 +21,10 @@ namespace Models
             this.userInfo = info;
         }
 
+        public void AddGold(int gold)
+        {
+            this.CurrentCharacter.Gold += gold;
+        }
 
         public MapDefine CurrentMapData { get; set; }
 

@@ -11,7 +11,7 @@ using SkillBridge.Message;
 
 namespace Network
 {
-    class NetSession
+    internal class NetSession :INetSession
     {
         public TUser User { get; set; }
         public Character Character { get; set; }
@@ -19,10 +19,43 @@ namespace Network
 
         internal void Disconnected()
         {
-            if (this.Character != null) 
+            if (this.Character != null)
             {
                 UserService.Instance.CharacterLeave(this.Character);
             }
+        }
+
+        private NetMessage response;
+
+        public NetMessageResponse Response
+        {
+            get
+            {
+                if (response == null)
+                {
+                    response = new NetMessage();
+                }
+                if (response.Response == null)
+                {
+                    response.Response = new NetMessageResponse();
+                }
+                return response.Response;
+            }
+        }
+
+        public byte[] GetResponse()
+        {
+            if (response != null)
+            {
+                if (this.Character != null && this.Character.StatusManager.HasStatus)
+                {
+                    this.Character.StatusManager.ApplyResponse(Response);
+                }
+                byte[] data = PackageHandler.PackMessage(response);
+                response = null;
+                return data;
+            }
+            return null;
         }
     }
 }

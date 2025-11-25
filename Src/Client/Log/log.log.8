@@ -1,106 +1,105 @@
-2025-11-21 20:30:17,169 [ 1] INFO  Unity: LoadingManager start
-2025-11-21 20:30:19,519 [ 1] WARN  Unity: BestFit is only supported for dynamic fonts. Font 'Numbers' is not dynamic.
+2025-11-23 17:54:02,064 [ 1] INFO  Unity: LoadingManager start
+2025-11-23 17:54:04,111 [ 1] WARN  Unity: BestFit is only supported for dynamic fonts. Font 'Numbers' is not dynamic.
 UnityEngine.Canvas:SendWillRenderCanvases()
 
-2025-11-21 20:30:20,493 [ 1] INFO  Unity: DataManager > DataManager()
-2025-11-21 20:30:37,942 [ 1] INFO  Unity: UserLoginRequest::user :user01 psw:123
-2025-11-21 20:30:37,949 [ 1] INFO  Unity: ConnectToServer() Start 
-2025-11-21 20:30:37,957 [ 1] INFO  Unity: DoConnect
-2025-11-21 20:30:37,960 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2025-11-21 20:30:37,968 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2025-11-23 17:54:05,113 [ 1] INFO  Unity: DataManager > DataManager()
+2025-11-23 17:54:10,417 [ 1] INFO  Unity: UserLoginRequest::user :user01 psw:123
+2025-11-23 17:54:10,417 [ 1] INFO  Unity: ConnectToServer() Start 
+2025-11-23 17:54:10,421 [ 1] INFO  Unity: DoConnect
+2025-11-23 17:54:10,422 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2025-11-23 17:54:10,425 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2025-11-21 20:30:37,980 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2025-11-21 20:30:38,173 [ 1] INFO  Unity: OnLogin:Success [None]
-2025-11-21 20:30:38,178 [ 1] INFO  Unity: LoadLevel: CharSelect
-2025-11-21 20:30:38,324 [ 1] INFO  Unity: LevelLoadCompleted:1
-2025-11-21 20:30:39,453 [ 1] INFO  Unity: Select Char:[1]Kuzumi01[Warrior]
-2025-11-21 20:30:40,181 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2025-11-21 20:30:40,229 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2025-11-21 20:30:40,239 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Models.Item..ctor (SkillBridge.Message.NItemInfo item) [0x00030] in E:\Project\Unity\Demo_MMO\Src\Client\Assets\Scripts\Models\Item.cs:19 
-  at Managers.ItemManager.Init (System.Collections.Generic.List`1 items) [0x00023] in E:\Project\Unity\Demo_MMO\Src\Client\Assets\Scripts\Managers\ItemManager.cs:23 
-  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00050] in E:\Project\Unity\Demo_MMO\Src\Client\Assets\Scripts\Services\UserService.cs:248 
-  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00000] in <filename unknown>:0 
-2025-11-21 20:30:40,241 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Models.Item..ctor (SkillBridge.Message.NItemInfo item) (at Assets/Scripts/Models/Item.cs:19)
-Managers.ItemManager.Init (System.Collections.Generic.List`1 items) (at Assets/Scripts/Managers/ItemManager.cs:23)
-Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:248)
-Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg)
-}</args></log4net.Error>
-2025-11-21 20:30:40,264 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2025-11-21 20:30:40,272 [ 1] INFO  Unity: AddCharacter:3:Kuzumi01 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2025-11-21 20:30:40,284 [ 1] INFO  Unity: LoadLevel: MainCity
-2025-11-21 20:30:40,284 [ 1] INFO  Unity: onCharacterEnter:1
-2025-11-21 20:30:40,285 [ 1] INFO  Unity: LoadLevel: MainCity
-2025-11-21 20:30:40,794 [ 1] WARN  Unity: GameObjectManager[-1044376] Awake
+2025-11-23 17:54:10,427 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2025-11-23 17:54:12,198 [ 1] INFO  Unity: OnLogin:Success [None]
+2025-11-23 17:54:12,199 [ 1] INFO  Unity: LoadLevel: CharSelect
+2025-11-23 17:54:12,306 [ 1] INFO  Unity: LevelLoadCompleted:1
+2025-11-23 17:54:14,173 [ 1] INFO  Unity: Select Char:[1]Kuzumi01[Warrior]
+2025-11-23 17:54:14,737 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2025-11-23 17:54:14,874 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2025-11-23 17:54:14,875 [ 1] INFO  Unity: ItemManager:Id:1,Count:20
+2025-11-23 17:54:14,876 [ 1] INFO  Unity: ItemManager:Id:2,Count:10
+2025-11-23 17:54:14,879 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2025-11-23 17:54:14,881 [ 1] INFO  Unity: AddCharacter:1:Kuzumi01 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2025-11-23 17:54:14,883 [ 1] INFO  Unity: LoadLevel: MainCity
+2025-11-23 17:54:14,883 [ 1] INFO  Unity: onCharacterEnter:1
+2025-11-23 17:54:14,884 [ 1] INFO  Unity: LoadLevel: MainCity
+2025-11-23 17:54:15,413 [ 1] WARN  Unity: GameObjectManager[-130002] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
 
-2025-11-21 20:30:40,815 [ 1] WARN  Unity: MainPlayerCamera[-1042782] Awake
+2025-11-23 17:54:15,425 [ 1] WARN  Unity: MainPlayerCamera[-128410] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
 
-2025-11-21 20:30:40,817 [ 1] WARN  Unity: UIWorldElementManager[-1041202] Awake
+2025-11-23 17:54:15,425 [ 1] WARN  Unity: UIWorldElementManager[-126828] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
 
-2025-11-21 20:30:40,817 [ 1] WARN  Unity: UIMain[126672] Awake
+2025-11-23 17:54:15,425 [ 1] WARN  Unity: UIMain[58498] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
 
-2025-11-21 20:30:40,854 [ 1] INFO  Unity: LevelLoadCompleted:1
-2025-11-21 20:32:08,395 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
-}</args></log4net.Error>
-2025-11-21 20:32:37,933 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
-}</args></log4net.Error>
-2025-11-21 20:32:38,359 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
-}</args></log4net.Error>
-2025-11-21 20:32:38,768 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
-}</args></log4net.Error>
-2025-11-21 20:32:39,203 [ 1] WARN  Unity: GameObjectManager[-1049956] Awake
+2025-11-23 17:54:15,447 [ 1] INFO  Unity: LevelLoadCompleted:1
+2025-11-23 17:54:15,767 [ 1] WARN  Unity: GameObjectManager[-135598] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
 
-2025-11-21 20:32:39,203 [ 1] WARN  Unity: MainPlayerCamera[-1048362] Awake
+2025-11-23 17:54:15,767 [ 1] WARN  Unity: MainPlayerCamera[-134006] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
 
-2025-11-21 20:32:39,203 [ 1] WARN  Unity: UIWorldElementManager[-1046782] Awake
+2025-11-23 17:54:15,768 [ 1] WARN  Unity: UIWorldElementManager[-132424] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
 
-2025-11-21 20:32:39,204 [ 1] WARN  Unity: UIMain[130168] Awake
+2025-11-23 17:54:15,768 [ 1] WARN  Unity: UIMain[61994] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:22)
 
-2025-11-21 20:32:39,223 [ 1] INFO  Unity: LevelLoadCompleted:1
-2025-11-21 20:32:39,289 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
+2025-11-23 17:54:15,786 [ 1] INFO  Unity: LevelLoadCompleted:1
+2025-11-23 17:54:16,594 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2025-11-23 17:54:16,595 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(98,-18,0) SPD:0 
+2025-11-23 17:54:16,693 [ 1] INFO  Unity: MoveForward
+2025-11-23 17:54:16,694 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5000,4000,820) DIR:(98,-18,0) SPD:300 
+2025-11-23 17:54:16,710 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
+2025-11-23 17:54:16,710 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5005,3999,820) DIR:(94,-35,0) SPD:300 
+2025-11-23 17:54:16,792 [ 1] INFO  Unity: SetDirection:(86, -51, 0)
+2025-11-23 17:54:16,793 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5030,3989,820) DIR:(86,-51,0) SPD:300 
+2025-11-23 17:54:16,876 [ 1] INFO  Unity: SetDirection:(76, -65, 0)
+2025-11-23 17:54:16,877 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5050,3974,820) DIR:(76,-65,0) SPD:300 
+2025-11-23 17:54:16,959 [ 1] INFO  Unity: SetDirection:(63, -77, 0)
+2025-11-23 17:54:16,959 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5070,3959,820) DIR:(63,-77,0) SPD:300 
+2025-11-23 17:54:17,041 [ 1] INFO  Unity: SetDirection:(49, -87, 0)
+2025-11-23 17:54:17,042 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5085,3939,820) DIR:(49,-87,0) SPD:300 
+2025-11-23 17:54:17,124 [ 1] INFO  Unity: SetDirection:(33, -94, 0)
+2025-11-23 17:54:17,125 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5095,3919,820) DIR:(33,-94,0) SPD:300 
+2025-11-23 17:54:17,208 [ 1] INFO  Unity: SetDirection:(16, -99, 0)
+2025-11-23 17:54:17,208 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5105,3894,820) DIR:(16,-99,0) SPD:300 
+2025-11-23 17:54:17,323 [ 1] INFO  Unity: SetDirection:(-3, -100, 0)
+2025-11-23 17:54:17,324 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5112,3859,820) DIR:(-3,-100,0) SPD:300 
+2025-11-23 17:54:17,787 [ 1] INFO  Unity: SetDirection:(-21, -98, 0)
+2025-11-23 17:54:17,787 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5112,3719,820) DIR:(-21,-98,0) SPD:300 
+2025-11-23 17:54:17,936 [ 1] INFO  Unity: SetDirection:(-39, -92, 0)
+2025-11-23 17:54:17,936 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5103,3674,820) DIR:(-39,-92,0) SPD:300 
+2025-11-23 17:54:18,036 [ 1] INFO  Unity: SetDirection:(-56, -83, 0)
+2025-11-23 17:54:18,036 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5091,3644,820) DIR:(-56,-83,0) SPD:300 
+2025-11-23 17:54:18,135 [ 1] INFO  Unity: SetDirection:(-71, -70, 0)
+2025-11-23 17:54:18,136 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5073,3620,820) DIR:(-71,-70,0) SPD:300 
+2025-11-23 17:54:18,301 [ 1] INFO  Unity: SetDirection:(-83, -56, 0)
+2025-11-23 17:54:18,301 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(5033,3580,820) DIR:(-83,-56,0) SPD:300 
+2025-11-23 17:54:20,537 [ 1] INFO  Unity: Stop
+2025-11-23 17:54:20,538 [ 1] INFO  Unity: MapEntityUpdateRequest :ID:1 POS:(4497,3178,820) DIR:(-83,-56,0) SPD:0 
+2025-11-23 17:54:21,255 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{KeyNotFoundException: The given key was not present in the dictionary., System.Collections.Generic.Dictionary`2[System.Int32,System.Collections.Generic.Dictionary`2[System.Int32,Common.Data.ShopItemDefine]].get_Item (Int32 key) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:150)
+UIShop+<InitItems>c__Iterator0.MoveNext () (at Assets/Scripts/UI/Shop/UIShop.cs:26)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at C:/buildslave/unity/build/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+UIShop:Start() (at Assets/Scripts/UI/Shop/UIShop.cs:21)
 }</args></log4net.Error>
-2025-11-21 20:32:40,012 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
-}</args></log4net.Error>
-2025-11-21 20:32:40,474 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
-}</args></log4net.Error>
-2025-11-21 20:32:41,210 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.NpcManager.GetNpcDefine (Int32 npcID) (at Assets/Scripts/Managers/NpcManager.cs:28)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:27)
-}</args></log4net.Error>
-2025-11-21 20:32:50,110 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2025-11-21 20:32:50,111 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2025-11-23 17:54:45,438 [ 1] INFO  Unity: Character_1_Kuzumi01 OnDestroy :ID:1 POS:(4497, 3178, 820) DIR:(-83, -56, 0) SPD:0 
+2025-11-23 17:54:45,440 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2025-11-23 17:54:45,440 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
 
-2025-11-21 20:32:50,113 [ 1] INFO  Unity: Character_3_Kuzumi01 OnDestroy :ID:3 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

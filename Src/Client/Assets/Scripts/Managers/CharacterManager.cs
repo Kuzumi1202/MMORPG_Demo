@@ -41,7 +41,7 @@ namespace Managers
             this.Characters.Clear();
         }
 
-        public void AddCharacter(SkillBridge.Message.NCharacterInfo cha)
+        public void AddCharacter(NCharacterInfo cha)
         {
             Debug.LogFormat("AddCharacter:{0}:{1} Map:{2} Entity:{3}", cha.Id, cha.Name, cha.mapId, cha.Entity.String());
             Character character = new Character(cha);

@@ -9,7 +9,7 @@ using Services;
 public class PlayerInputController : MonoBehaviour
 {
     public Rigidbody rb;
-    private SkillBridge.Message.CharacterState state;
+    private CharacterState state;
 
     public Character character;
 
@@ -24,9 +24,9 @@ public class PlayerInputController : MonoBehaviour
     public bool onAir = false;
 
     // Use this for initialization
-    private void Start()
+    private void Awake()
     {
-        state = SkillBridge.Message.CharacterState.Idle;
+        state = CharacterState.Idle;
         if (this.character == null)
         {
             DataManager.Instance.Load();

@@ -37,7 +37,7 @@ namespace Network
     /// <summary>
     /// A connection to our server.
     /// </summary>
-    public class NetConnection<T>
+    public class NetConnection<T> where T : INetSession
     {
         /// <summary>
         /// Represents a callback used to inform a listener that a ServerConnection has received data.
@@ -45,6 +45,7 @@ namespace Network
         /// <param name="sender">The sender of the callback.</param>
         /// <param name="e">The DataEventArgs object containging the received data.</param>
         public delegate void DataReceivedCallback(NetConnection<T> sender, DataEventArgs e);
+
         /// <summary>
         /// Represents a callback used to inform a listener that a ServerConnection has disconnected.
         /// </summary>
@@ -53,21 +54,26 @@ namespace Network
         public delegate void DisconnectedCallback(NetConnection<T> sender, SocketAsyncEventArgs e);
 
         #region Internal Classes
+
         internal class State
         {
             public DataReceivedCallback dataReceived;
             public DisconnectedCallback disconnectedCallback;
             public Socket socket;
         }
-        #endregion
+
+        #endregion Internal Classes
 
         #region Fields
+
         private SocketAsyncEventArgs eventArgs;
 
         public PackageHandler<NetConnection<T>> packageHandler;
-        #endregion
+
+        #endregion Fields
 
         #region Constructor
+
         /// <summary>
         /// A connection to our server, always listening asynchronously.
         /// </summary>
@@ -91,15 +97,17 @@ namespace Network
                 eventArgs.AcceptSocket = socket;
                 eventArgs.Completed += ReceivedCompleted;
                 eventArgs.UserToken = state;
-                eventArgs.SetBuffer(new byte[64 * 1024],0, 64 * 1024);
+                eventArgs.SetBuffer(new byte[64 * 1024], 0, 64 * 1024);
 
                 BeginReceive(eventArgs);
                 this.session = session;
             }
         }
-        #endregion
+
+        #endregion Constructor
 
         #region Public Methods
+
         /// <summary>
         /// Disconnects the client.
         /// </summary>
@@ -129,6 +137,12 @@ namespace Network
             }
         }
 
+        public void SendResponse()
+        {
+            byte[] data = session.GetResponse();
+            this.SendData(data, 0, data.Length);
+        }
+
         private void SendCallback(IAsyncResult ar)
         {
             try
@@ -145,11 +159,10 @@ namespace Network
             }
         }
 
-
-        #endregion
-
+        #endregion Public Methods
 
         #region Private Methods
+
         /// <summary>
         /// Starts and asynchronous recieve.
         /// </summary>
@@ -215,9 +228,11 @@ namespace Network
             args.Completed -= ReceivedCompleted; //MUST Remember This!
             OnDisconnected(args, state.disconnectedCallback);
         }
-        #endregion
+
+        #endregion Private Methods
 
         #region Events
+
         /// <summary>
         /// Fires the DataReceivedCallback.
         /// </summary>
@@ -226,7 +241,7 @@ namespace Network
         /// <param name="callback">The callback.</param>
         private void OnDataReceived(Byte[] data, IPEndPoint remoteEndPoint, DataReceivedCallback callback)
         {
-            callback(this, new DataEventArgs() { RemoteEndPoint = remoteEndPoint, Data = data, Offset =0, Length = data.Length  });
+            callback(this, new DataEventArgs() { RemoteEndPoint = remoteEndPoint, Data = data, Offset = 0, Length = data.Length });
         }
 
         /// <summary>
@@ -238,7 +253,8 @@ namespace Network
         {
             callback(this, args);
         }
-        #endregion
+
+        #endregion Events
 
         #region public Property
 
@@ -250,11 +266,13 @@ namespace Network
         public bool Verified { get; set; }
 
         private T session;
+
         /// <summary>
         /// 获取或设置一个会话对象
         /// </summary>
-        public T Session { get { return session; } }
+        public T Session
+        { get { return session; } }
 
-        #endregion
+        #endregion public Property
     }
 }
