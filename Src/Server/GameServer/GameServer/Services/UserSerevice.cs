@@ -112,6 +112,7 @@ namespace GameServer.Services
                 MapPosY = 4000, //初始出生位置Y
                 MapPosZ = 820,
                 Gold = 10000, // 初始化金币
+                Equips = new byte[28]
             };
 
             var bag = new TCharacterBag();
@@ -173,20 +174,6 @@ namespace GameServer.Services
 
             //进入成功，发送初始角色信息
             message.Response.gameEnter.Character = character.Info;
-
-            //道具系统测试
-            int itemId = 2;
-            bool hasItem = character.ItemManager.HasItem(itemId);
-            Log.InfoFormat("HasItem:[{0}]{1}", itemId, hasItem);
-            if (!hasItem)
-            {
-                character.ItemManager.AddItem(1, 200);
-                character.ItemManager.AddItem(2, 100);
-            }
-         
-            Models.Item item = character.ItemManager.GetItem(itemId);
-            Log.InfoFormat("Item:[{0}][{1}]", itemId, item);
-            DBService.Instance.Save();
 
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);

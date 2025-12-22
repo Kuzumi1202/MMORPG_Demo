@@ -107,8 +107,16 @@
     "MapID": 4,
     "LinkTo": 4,
     "Descript": null,
-    "Position": null,
-    "Direction": null
+    "Position": {
+      "X": -2154,
+      "Y": 2125,
+      "Z": 154
+    },
+    "Direction": {
+      "X": 71,
+      "Y": 71,
+      "Z": 0
+    }
   },
   "8": {
     "ID": 8,
@@ -116,7 +124,15 @@
     "MapID": 4,
     "LinkTo": 0,
     "Descript": null,
-    "Position": null,
-    "Direction": null
+    "Position": {
+      "X": -2548,
+      "Y": -3044,
+      "Z": -70
+    },
+    "Direction": {
+      "X": 71,
+      "Y": 71,
+      "Z": 0
+    }
   }
 }

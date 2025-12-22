@@ -21,6 +21,8 @@ namespace Common.Data
         public string Description { get; set; }
         public ItemType type { get; set; }
         public string Category { get; set; }
+        public int Level { get; set; }
+        public CharacterClass LimitClass { get; set; }
         public bool CanUse { get; set; }
         public int Price { get; set; }
         public int SellPrice { get; set; }

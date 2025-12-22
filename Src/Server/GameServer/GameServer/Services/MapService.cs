@@ -45,7 +45,7 @@ namespace GameServer.Services
         private void OnMapTeleport(NetConnection<NetSession> sender, MapTeleportRequest request)
         {
             Character character = sender.Session.Character;
-            Log.InfoFormat("OnMapTeleport: characterID:{0}:{1} TeleporterId:{2}", character.Id, character.Data, request.teleporterId);
+            Log.InfoFormat("OnMapTeleport: characterID:{0}:{1} TeleporterId:{2}", character.Id, character.Data.Name, request.teleporterId);
 
             if (!DataManager.Instance.Teleporters.ContainsKey(request.teleporterId))
             {

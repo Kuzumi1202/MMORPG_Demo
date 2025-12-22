@@ -1,0 +1,44 @@
+
+2025-12-23 16:17:45,056 [1] [INFO ] [GameServer] ：Game Server Init
+2025-12-23 16:17:45,703 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-12-23 16:17:46,163 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2025-12-23 16:17:46,165 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-12-23 16:17:46,165 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-12-23 16:17:46,165 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日空间
+2025-12-23 16:17:46,167 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-12-23 16:17:46,229 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-12-23 16:17:46,229 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-12-23 16:17:46,229 [15] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-12-23 16:17:46,229 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-12-23 16:17:46,229 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-12-23 16:17:46,229 [16] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-12-23 16:17:46,229 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-12-23 16:17:46,229 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-12-23 16:17:46,275 [1] [WARN ] [GameServer] ：NetService Started
+2025-12-23 16:17:52,479 [3] [WARN ] [GameServer] ：Client[127.0.0.1:59467]] Connected
+2025-12-23 16:17:52,525 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:21
+2025-12-23 16:17:52,608 [7] [INFO ] [GameServer] ：UserLoginRequest: User:user01  Pass:123
+2025-12-23 16:17:56,231 [4] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2025-12-23 16:17:56,233 [8] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:Kuzumi Map:1
+2025-12-23 16:17:56,288 [8] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-12-23 16:18:02,412 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:13
+2025-12-23 16:18:02,414 [7] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>OnItemEquip: Character:{0}; Slot:{1}; Item:{2}; Equip:{3}}</format><args>{1, 0, 2001, True}</args></log4net.Error>
+2025-12-23 16:18:04,318 [4] [WARN ] [GameServer] ：Client[] DataReceived Len:11
+2025-12-23 16:18:04,318 [8] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>OnItemEquip: Character:{0}; Slot:{1}; Item:{2}; Equip:{3}}</format><args>{1, 0, 2001, False}</args></log4net.Error>
+2025-12-23 16:18:08,112 [4] [WARN ] [GameServer] ：Client[] DataReceived Len:15
+2025-12-23 16:18:08,112 [7] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>OnItemEquip: Character:{0}; Slot:{1}; Item:{2}; Equip:{3}}</format><args>{1, 5, 2006, True}</args></log4net.Error>
+2025-12-23 16:18:10,082 [4] [WARN ] [GameServer] ：Client[] DataReceived Len:13
+2025-12-23 16:18:10,083 [8] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>OnItemEquip: Character:{0}; Slot:{1}; Item:{2}; Equip:{3}}</format><args>{1, 5, 2006, False}</args></log4net.Error>
+2025-12-23 16:18:12,137 [4] [WARN ] [GameServer] ：Client[] DataReceived Len:13
+2025-12-23 16:18:12,137 [7] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>OnItemEquip: Character:{0}; Slot:{1}; Item:{2}; Equip:{3}}</format><args>{1, 0, 2001, True}</args></log4net.Error>
+2025-12-23 16:18:13,695 [4] [WARN ] [GameServer] ：Client[] DataReceived Len:11
+2025-12-23 16:18:13,695 [8] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>OnItemEquip: Character:{0}; Slot:{1}; Item:{2}; Equip:{3}}</format><args>{1, 0, 2001, False}</args></log4net.Error>
+2025-12-23 16:18:17,886 [4] [WARN ] [GameServer] ：Client[] DataReceived Len:13
+2025-12-23 16:18:17,886 [7] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>OnItemEquip: Character:{0}; Slot:{1}; Item:{2}; Equip:{3}}</format><args>{1, 0, 2001, True}</args></log4net.Error>
+2025-12-23 16:18:19,443 [4] [WARN ] [GameServer] ：Client[] DataReceived Len:11
+2025-12-23 16:18:19,444 [7] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>OnItemEquip: Character:{0}; Slot:{1}; Item:{2}; Equip:{3}}</format><args>{1, 0, 2001, False}</args></log4net.Error>
+2025-12-23 16:18:51,132 [18] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2025-12-23 16:18:51,133 [7] [INFO ] [GameServer] ：UserGameLeaveRequest: characterID:1:Kuzumi Map:1
+2025-12-23 16:18:51,134 [7] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-12-23 16:18:52,682 [18] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
+2025-12-23 16:18:52,683 [18] [WARN ] [GameServer] ：Client[] Disconnected

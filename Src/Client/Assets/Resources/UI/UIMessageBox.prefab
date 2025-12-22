@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 114330779436974942}
   m_Layer: 5
   m_Name: TitleBar
-  m_TagString: Untagged
+  m_TagString: Title
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -296,6 +296,9 @@ MonoBehaviour:
   - {fileID: 114074642495481368}
   buttonYes: {fileID: 114149779274491158}
   buttonNo: {fileID: 114926987955455140}
+  buttonClose: {fileID: 0}
+  buttonYesTitle: {fileID: 0}
+  buttonNoTitle: {fileID: 0}
 --- !u!114 &114149779274491158
 MonoBehaviour:
   m_ObjectHideFlags: 1

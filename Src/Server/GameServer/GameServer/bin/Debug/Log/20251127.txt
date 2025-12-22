@@ -1,0 +1,46 @@
+
+2025-11-27 13:33:04,160 [1] [INFO ] [GameServer] ：Game Server Init
+2025-11-27 13:33:04,362 [1] [INFO ] [GameServer] ：DataManager > DataManager()
+2025-11-27 13:33:04,541 [1] [INFO ] [GameServer] ：MapManager.Init > Map:1:布林镇
+2025-11-27 13:33:04,543 [1] [INFO ] [GameServer] ：MapManager.Init > Map:2:落日森林
+2025-11-27 13:33:04,543 [1] [INFO ] [GameServer] ：MapManager.Init > Map:3:落日森林
+2025-11-27 13:33:04,543 [1] [INFO ] [GameServer] ：MapManager.Init > Map:4:落日空间
+2025-11-27 13:33:04,543 [1] [WARN ] [GameServer] ：Starting Listener...
+2025-11-27 13:33:04,579 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-27 13:33:04,580 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-27 13:33:04,583 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-27 13:33:04,583 [13] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-27 13:33:04,583 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-27 13:33:04,584 [14] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-27 13:33:04,584 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-27 13:33:04,584 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2025-11-27 13:33:04,654 [1] [WARN ] [GameServer] ：NetService Started
+2025-11-27 13:33:36,706 [18] [WARN ] [GameServer] ：Client[127.0.0.1:54529]] Connected
+2025-11-27 13:33:36,844 [18] [WARN ] [GameServer] ：Client[] DataReceived Len:21
+2025-11-27 13:33:36,924 [5] [INFO ] [GameServer] ：UserLoginRequest: User:user01  Pass:123
+2025-11-27 13:33:41,069 [7] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2025-11-27 13:33:41,071 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1:Kuzumi Map:1
+2025-11-27 13:33:41,137 [6] [INFO ] [GameServer] ：CharacterEnter: Map:1 characterId:1
+2025-11-27 13:33:43,923 [7] [WARN ] [GameServer] ：Client[] DataReceived Len:36
+2025-11-27 13:33:43,928 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:1:Kuzumi Entity.Id:1 Evt:MoveFwd Entity:(1:pos:(5005,4000,820),dir:(100,0,0),spd:300
+2025-11-27 13:33:44,405 [7] [WARN ] [GameServer] ：Client[] DataReceived Len:45
+2025-11-27 13:33:44,406 [8] [INFO ] [GameServer] ：OnMapEntitySync: characterID:1:Kuzumi Entity.Id:1 Evt:None Entity:(1:pos:(5150,3999,820),dir:(98,-18,0),spd:300
+2025-11-27 13:33:44,505 [7] [WARN ] [GameServer] ：Client[] DataReceived Len:44
+2025-11-27 13:33:44,506 [10] [INFO ] [GameServer] ：OnMapEntitySync: characterID:1:Kuzumi Entity.Id:1 Evt:Idle Entity:(1:pos:(5175,3994,820),dir:(93,-36,0),spd:0
+2025-11-27 13:33:44,538 [7] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-27 13:33:44,538 [11] [INFO ] [GameServer] ：OnMapEntitySync: characterID:1:Kuzumi Entity.Id:1 Evt:None Entity:(1:pos:(5175,3994,820),dir:(93,-36,0),spd:0
+2025-11-27 13:33:44,605 [7] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-27 13:33:44,605 [12] [INFO ] [GameServer] ：OnMapEntitySync: characterID:1:Kuzumi Entity.Id:1 Evt:None Entity:(1:pos:(5175,3994,820),dir:(84,-54,0),spd:0
+2025-11-27 13:33:44,687 [7] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-27 13:33:44,687 [14] [INFO ] [GameServer] ：OnMapEntitySync: characterID:1:Kuzumi Entity.Id:1 Evt:None Entity:(1:pos:(5175,3994,820),dir:(73,-68,0),spd:0
+2025-11-27 13:33:44,803 [7] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-27 13:33:44,803 [13] [INFO ] [GameServer] ：OnMapEntitySync: characterID:1:Kuzumi Entity.Id:1 Evt:None Entity:(1:pos:(5175,3994,820),dir:(58,-82,0),spd:0
+2025-11-27 13:33:44,903 [7] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-27 13:33:44,903 [6] [INFO ] [GameServer] ：OnMapEntitySync: characterID:1:Kuzumi Entity.Id:1 Evt:None Entity:(1:pos:(5175,3994,820),dir:(40,-92,0),spd:0
+2025-11-27 13:33:45,035 [7] [WARN ] [GameServer] ：Client[] DataReceived Len:42
+2025-11-27 13:33:45,036 [5] [INFO ] [GameServer] ：OnMapEntitySync: characterID:1:Kuzumi Entity.Id:1 Evt:None Entity:(1:pos:(5175,3994,820),dir:(22,-98,0),spd:0
+2025-11-27 13:33:59,662 [7] [WARN ] [GameServer] ：Client[] DataReceived Len:13
+2025-11-27 13:33:59,664 [5] [INFO ] [GameServer] ：<log4net.Error>Exception during StringFormat: 输入字符串的格式不正确。 <format>OnItemEquip: Character:{0}; Slot:{1}; Item:{2}; Equip:{3}}</format><args>{1, 0, 2001, True}</args></log4net.Error>
+2025-11-27 13:34:46,461 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2025-11-27 13:34:46,462 [5] [INFO ] [GameServer] ：UserGameLeaveRequest: characterID:1:Kuzumi Map:1
+2025-11-27 13:34:46,463 [5] [INFO ] [GameServer] ：CharacterLeave: Map:1 characterId:1
